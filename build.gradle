@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.0'
     }
 }
 
@@ -179,6 +179,8 @@ dependencies {
     compile project(':external:datetimepicker')
     compile project(':external:timezonepicker')
     compile project(':external:chips')
+    compile 'com.mechdome:MechDome-Api:0.2'
+    compile 'com.mechdome:MechDome-About:0.2'
 }
 
 android {

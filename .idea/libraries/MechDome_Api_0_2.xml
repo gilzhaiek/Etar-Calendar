@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="MechDome-Api-0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/587ff2323dcb15a99ca935b391b95a43807ee13d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/587ff2323dcb15a99ca935b391b95a43807ee13d/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mechdome/MechDome-Api/0.2/895e4e32ff7a2f5dc70bd3323f34588b4b5b1322/MechDome-Api-0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

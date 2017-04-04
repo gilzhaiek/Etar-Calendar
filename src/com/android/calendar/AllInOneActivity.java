@@ -801,8 +801,8 @@ public class AllInOneActivity extends AbstractCalendarActivity implements EventH
         MenuItem item = menu.findItem(R.id.action_import);
         item.setVisible(ImportActivity.hasThingsToImport(this));
 
-        mSearchMenu = menu.findItem(R.id.action_search);
-        mSearchView = (SearchView) MenuItemCompat.getActionView(mSearchMenu);
+//        mSearchMenu = menu.findItem(R.id.action_search);
+//        mSearchView = (SearchView) MenuItemCompat.getActionView(mSearchMenu);
         if (mSearchView != null) {
             Utils.setUpSearchView(mSearchView, this);
             mSearchView.setOnQueryTextListener(this);
@@ -1363,7 +1363,7 @@ public class AllInOneActivity extends AbstractCalendarActivity implements EventH
 
     @Override
     public boolean onQueryTextSubmit(String query) {
-        mSearchMenu.collapseActionView();
+//        mSearchMenu.collapseActionView();
         mController.sendEvent(this, EventType.SEARCH, null, null, -1, ViewType.CURRENT, 0, query,
                 getComponentName());
         return true;
@@ -1409,7 +1409,7 @@ public class AllInOneActivity extends AbstractCalendarActivity implements EventH
 
     @Override
     public boolean onSuggestionClick(int position) {
-        mSearchMenu.collapseActionView();
+//        mSearchMenu.collapseActionView();
         return false;
     }
 

@@ -35,5 +35,6 @@
         android:layout_marginRight="8dp"
         android:layout_gravity="center_horizontal"
         android:onClick="handleSelectSyncedCalendarsClicked"
-        android:text="@string/select_synced_calendars_button" />
+        android:text="@string/select_synced_calendars_button"
+        android:visibility="invisible" />
 </LinearLayout>

@@ -60,6 +60,8 @@ public class SelectVisibleCalendarsActivity extends AbstractCalendarActivity {
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
+        getSupportActionBar().show();
+
         dynamicTheme.onCreate(this);
         setContentView(R.layout.simple_frame_layout);
 
