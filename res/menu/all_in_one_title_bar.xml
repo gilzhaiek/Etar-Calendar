@@ -37,15 +37,15 @@
         android:orderInCategory="3"
         android:title="@string/calendar_refresh"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_search"
-        android:alphabeticShortcut="f"
-        android:icon="@drawable/ic_menu_search"
-        android:imeOptions="actionSearch"
-        android:orderInCategory="4"
-        android:title="@string/search"
-        app:actionViewClass="android.support.v7.widget.SearchView"
-        app:showAsAction="never|collapseActionView" />
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:alphabeticShortcut="f"-->
+        <!--android:icon="@drawable/ic_menu_search"-->
+        <!--android:imeOptions="actionSearch"-->
+        <!--android:orderInCategory="4"-->
+        <!--android:title="@string/search"-->
+        <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
+        <!--app:showAsAction="never|collapseActionView" />-->
     <item
         android:id="@+id/action_import"
         android:alphabeticShortcut="i"

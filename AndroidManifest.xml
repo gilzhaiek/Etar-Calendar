@@ -148,6 +148,7 @@
 
         <activity android:name="com.android.calendar.selectcalendars.SelectVisibleCalendarsActivity"
             android:label="@string/select_visible_calendars_title"
+            android:parentActivityName="com.android.calendar.AllInOneActivity"
             android:theme="@style/Base.CalendarAppThemeWithActionBar" />
 
         <activity android:name="com.android.calendar.selectcalendars.SelectSyncedCalendarsMultiAccountActivity"

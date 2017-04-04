@@ -39,13 +39,16 @@ import android.support.v7.widget.AppCompatSpinner;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 
 import com.android.calendar.selectcalendars.SelectCalendarsSyncFragment;
+import com.mechdome.aboutmechdome.AboutMechDomeActivity;
 
 import java.util.List;
 
@@ -89,6 +92,7 @@ public class CalendarSettingsActivity extends PreferenceActivity {
                 finish();
             }
         });
+
     }
 
     @Override
@@ -117,6 +121,7 @@ public class CalendarSettingsActivity extends PreferenceActivity {
         }
         return null;
     }
+
 
     @Override
     public void onBuildHeaders(List<Header> target) {
@@ -199,6 +204,14 @@ public class CalendarSettingsActivity extends PreferenceActivity {
                 || OtherPreferences.class.getName().equals(fragmentName)
                 || AboutPreferences.class.getName().equals(fragmentName)
                 || QuickResponseSettings.class.getName().equals(fragmentName);
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        if (position == 2) {
+            Intent i = new Intent(this,AboutMechDomeActivity.class);
+            startActivity(i);
+        }
     }
 
     public void hideMenuButtons() {
