@@ -179,8 +179,7 @@ dependencies {
     compile project(':external:datetimepicker')
     compile project(':external:timezonepicker')
     compile project(':external:chips')
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.mechdome:MechDome-About:0.7'
+    compile 'com.mechdome:MechDome-About:+'
 }
 
 android {

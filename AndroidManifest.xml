@@ -215,7 +215,7 @@
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Holo.Dialog" />
-
+        <meta-data android:name="md_remove_ads" android:value="ws.xsoh.etar.MechDomeAd" />
         <receiver android:name="com.android.calendar.alerts.AlertReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.EVENT_REMINDER" />
@@ -281,7 +281,6 @@
         </service>
 
         <service android:name="com.android.calendar.AsyncQueryServiceHelper" />
-
     </application>
 </manifest>
 
