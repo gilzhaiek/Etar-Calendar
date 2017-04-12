@@ -22,6 +22,6 @@
     <header android:fragment="com.android.calendar.AboutPreferences"
             android:title="@string/menu_about_preferences" />
 
-    <header
+    <header android:fragment="com.mechdome.aboutmechdome.AboutMechDomeFragment"
         android:title="@string/about_mechdome" />
 </preference-headers>

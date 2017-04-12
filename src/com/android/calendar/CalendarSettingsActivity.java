@@ -48,7 +48,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.android.calendar.selectcalendars.SelectCalendarsSyncFragment;
-import com.mechdome.aboutmechdome.AboutMechDomeActivity;
+import com.mechdome.aboutmechdome.AboutMechDomeFragment;
 
 import java.util.List;
 
@@ -203,16 +203,17 @@ public class CalendarSettingsActivity extends PreferenceActivity {
                 || SelectCalendarsSyncFragment.class.getName().equals(fragmentName)
                 || OtherPreferences.class.getName().equals(fragmentName)
                 || AboutPreferences.class.getName().equals(fragmentName)
+                || AboutMechDomeFragment.class.getName().equals(fragmentName)
                 || QuickResponseSettings.class.getName().equals(fragmentName);
     }
 
-    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        if (position == 2) {
-            Intent i = new Intent(this,AboutMechDomeActivity.class);
-            startActivity(i);
-        }
-    }
+//    @Override
+//    protected void onListItemClick(ListView l, View v, int position, long id) {
+//        if (position == 2) {
+//            Intent i = new Intent(this,AboutMechDomeActivity.class);
+//            startActivity(i);
+//        }
+//    }
 
     public void hideMenuButtons() {
         mHideMenuButtons = true;
