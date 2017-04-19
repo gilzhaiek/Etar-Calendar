@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="timezonepicker-unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/external/timezonepicker/build/intermediates/bundles/default/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/external/timezonepicker/build/intermediates/bundles/default/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

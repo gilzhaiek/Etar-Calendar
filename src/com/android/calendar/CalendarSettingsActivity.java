@@ -48,8 +48,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.android.calendar.selectcalendars.SelectCalendarsSyncFragment;
-import com.mechdome.aboutmechdome.AboutMechDomeFragment;
-
 import java.util.List;
 
 import ws.xsoh.etar.R;
@@ -203,7 +201,6 @@ public class CalendarSettingsActivity extends PreferenceActivity {
                 || SelectCalendarsSyncFragment.class.getName().equals(fragmentName)
                 || OtherPreferences.class.getName().equals(fragmentName)
                 || AboutPreferences.class.getName().equals(fragmentName)
-                || AboutMechDomeFragment.class.getName().equals(fragmentName)
                 || QuickResponseSettings.class.getName().equals(fragmentName);
     }
 
