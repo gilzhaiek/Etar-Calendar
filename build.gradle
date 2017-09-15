@@ -4,17 +4,14 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
-        classpath 'com.google.gms:google-services:3.0.0'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
+        maven { url "https://maven.google.com" }
     }
 }
 
@@ -183,11 +180,8 @@ dependencies {
     compile project(':external:datetimepicker')
     compile project(':external:timezonepicker')
     compile project(':external:chips')
-    compile 'com.google.firebase:firebase-core:11.2.0'
-    compile 'com.google.firebase:firebase-ads:11.2.0'
-    compile 'com.mechdome:MechDome-About:+'
+    compile 'com.mechdome:MechDome-About:1.6'
 }
-apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 25
@@ -209,6 +203,18 @@ android {
                 renderscript.srcDirs = ['src']
                 res.srcDirs = ['res']
                 assets.srcDirs = ['assets']
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+
+            debug {
+                minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
         }
     }
 
